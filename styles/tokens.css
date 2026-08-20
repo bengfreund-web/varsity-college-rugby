@@ -1,7 +1,7 @@
 /* ============================================================
    tokens.css — design tokens only. No rules.
    THEME: Clean pitch — cool near-white grounds, deep green-slate
-   ink, pitch-green accent, Poppins display + Inter body.
+   ink, pitch-green accent, Poppins throughout (matches TRY Sport).
    Every color and type decision derives from this file.
    ============================================================ */
 
@@ -35,8 +35,8 @@
 
   /* ---- Type families ---- */
   --font-display: "Poppins", system-ui, sans-serif;
-  --font-body:    "Inter", system-ui, sans-serif;
-  --font-data:    "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+  --font-body:    "Poppins", system-ui, sans-serif;
+  --font-data:    "Poppins", system-ui, sans-serif;
 
   /* ---- Type scale (fluid) ---- */
   --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
