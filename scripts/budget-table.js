@@ -25,6 +25,23 @@ function render(budget) {
   setText("[data-budget-total]", money(budget.total));
   setText("[data-budget-note]", budget.note);
 
+  // The other side of the ledger — cost read against enrollment value
+  const ledgerWrap = document.querySelector("[data-budget-ledger]");
+  if (ledgerWrap && budget.ledger) {
+    const l = budget.ledger;
+    const stats = (l.stats || [])
+      .map(
+        (s) =>
+          `<div class="stat"><span class="stat__num">${esc(s.num)}</span><span class="stat__label">${esc(s.label)}</span></div>`
+      )
+      .join("");
+    ledgerWrap.innerHTML = `
+      <h3 class="ledger__title">${esc(l.title)}</h3>
+      <p class="ledger__lead">${esc(l.lead)}</p>
+      <div class="ledger__stats">${stats}</div>
+      ${l.note ? `<p class="ledger__note">${esc(l.note)}</p>` : ""}`;
+  }
+
   const wrap = document.querySelector("[data-budget-breakdown]");
   if (!wrap) return;
   wrap.innerHTML = (budget.categories || [])

@@ -133,7 +133,7 @@ function hydrateForm(config) {
   } else {
     const fallback = config.formDirectUrl
       ? `<p class="form-fallback"><a class="btn btn--outline btn--sm" href="${esc(config.formDirectUrl)}" target="_blank" rel="noopener">Open the form in a new tab</a></p>`
-      : `<div class="form-missing">The sign-up form will appear here once it's connected.</div>`;
+      : `<div class="form-missing">Request form coming soon. Add your Google Form in <span class="mono">config.json</span> and it appears here.</div>`;
     wrap.innerHTML = fallback + contactBlock(config);
   }
 }

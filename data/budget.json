@@ -3,22 +3,74 @@
   "title": "What does varsity rugby cost?",
   "totalLabel": "Estimated Year-One program budget",
   "total": 165750,
-  "note": "Illustrative first-year figures from a real proposal. Years 2–5 run at about $151,000 — the one-time equipment spend does not repeat. Every college's numbers differ.",
+  "note": "Illustrative first-year figures from a real proposal. Years 2\u20135 run at about $151,000 \u2014 the one-time equipment spend does not repeat. Every college's numbers differ.",
   "categories": [
-    { "label": "Personnel", "amount": 72000, "items": [
-      { "label": "Head coach (1.0 FTE, both squads)", "amount": 52000 },
-      { "label": "Graduate assistants (2)", "amount": 20000 }
-    ] },
-    { "label": "Travel and competition", "amount": 75000, "items": [
-      { "label": "Both squads — fall 15s and spring 7s", "amount": 75000 }
-    ] },
-    { "label": "Equipment and kit", "amount": 18750, "items": [
-      { "label": "Team equipment (one-time)", "amount": 10000 },
-      { "label": "Playing kit", "amount": 3500 },
-      { "label": "Training and off-field kit", "amount": 5250 }
-    ] },
-    { "label": "Facilities", "amount": 0, "items": [
-      { "label": "Shares existing grass — no new build", "amount": 0 }
-    ] }
-  ]
+    {
+      "label": "Personnel",
+      "amount": 72000,
+      "items": [
+        {
+          "label": "Head coach (1.0 FTE, both squads)",
+          "amount": 52000
+        },
+        {
+          "label": "Graduate assistants (2)",
+          "amount": 20000
+        }
+      ]
+    },
+    {
+      "label": "Travel and competition",
+      "amount": 75000,
+      "items": [
+        {
+          "label": "Both squads \u2014 fall 15s and spring 7s",
+          "amount": 75000
+        }
+      ]
+    },
+    {
+      "label": "Equipment and kit",
+      "amount": 18750,
+      "items": [
+        {
+          "label": "Team equipment (one-time)",
+          "amount": 10000
+        },
+        {
+          "label": "Playing kit",
+          "amount": 3500
+        },
+        {
+          "label": "Training and off-field kit",
+          "amount": 5250
+        }
+      ]
+    },
+    {
+      "label": "Facilities",
+      "amount": 0,
+      "items": [
+        {
+          "label": "Shares existing grass \u2014 no new build",
+          "amount": 0
+        }
+      ]
+    }
+  ],
+  "ledger": {
+    "title": "The other side of the ledger",
+    "lead": "Rugby is enrollment-funded. The cost only makes sense read against the students it brings in.",
+    "stats": [
+      {
+        "num": "~12",
+        "label": "incremental students cover the annual program cost, at typical net tuition"
+      },
+      {
+        "num": "35 \u2192 95",
+        "label": "roster growth by Year 5 \u2014 one of the largest in college sport"
+      }
+    ],
+    "note": "Incremental students \u2014 those who would not otherwise have enrolled \u2014 are not the same as total roster size. The enrollment case should be built on the former."
+  }
 }
