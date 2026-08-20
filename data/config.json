@@ -10,11 +10,20 @@
   "formDirectUrl": "",
   "proposalPdfUrl": "",
   "hero": {
-    "eyebrow": "Our mission",
+    "eyebrow": "A new varsity sport",
     "headline": [
-      "Bring varsity rugby",
-      "to campus"
+      "A new varsity sport.",
+      "A new enrollment channel."
     ],
-    "subhead": "We help colleges with no rugby program today introduce it as a brand-new varsity sport \u2014 an enrollment-positive, low-capital addition to athletics that fields one of the largest rosters in college sport."
-  }
+    "subhead": "Varsity rugby gives colleges another way to recruit students, expand athletics, and differentiate their institution \u2014 without the capital cost of most new sports.",
+    "ctaPrimary": {
+      "label": "Evaluate rugby for your college",
+      "href": "#evaluate"
+    },
+    "ctaSecondary": {
+      "label": "Explore the financial model",
+      "href": "#cost"
+    }
+  },
+  "mission": "Our mission is simple: bring varsity rugby to more colleges \u2014 and more students to their campuses."
 }

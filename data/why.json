@@ -1,26 +1,12 @@
 {
-  "eyebrow": "About the initiative",
-  "title": "Why this will work",
+  "eyebrow": "Why rugby",
+  "title": "The institutional opportunity",
+  "lead": "Rugby is an institutional decision before it is an athletic one. Here is what it can do for a college.",
   "pillars": [
-    {
-      "icon": "cost",
-      "title": "Cost",
-      "body": "A large roster at almost no per-athlete capital cost \u2014 shared fields, shared staff, and posts as the only fixed item. Facilities cost can be zero."
-    },
-    {
-      "icon": "barrier",
-      "title": "Barriers to entry",
-      "body": "Rugby uses existing fields like football, soccer, or lacrosse, minimal equipment, and welcomes all shapes and sizes."
-    },
-    {
-      "icon": "demand",
-      "title": "Demand",
-      "body": "Thousands of players compete at the club level nationally with no varsity option, and a fast-growing youth and high-school pipeline feeds the college game every year."
-    },
-    {
-      "icon": "support",
-      "title": "Support",
-      "body": "Backed by USA Rugby and World Rugby, with governance, standards, insurance, and a defined competition structure."
-    }
+    { "icon": "demand",  "title": "Enrollment",       "body": "Rugby opens a new population of prospective student-athletes an institution can actively recruit — many of whom would not otherwise apply." },
+    { "icon": "support", "title": "Athletics",         "body": "Adds a varsity offering and expands the institution's athletic portfolio, with one of the largest rosters in college sport." },
+    { "icon": "barrier", "title": "Differentiation",   "body": "Gives an institution another way to stand out in competitive recruiting markets — a program most peers do not offer." },
+    { "icon": "cost",    "title": "Facilities",        "body": "Rugby can share existing rectangular fields and athletic infrastructure rather than requiring a sport-specific build." },
+    { "icon": "support", "title": "Student experience","body": "Creates another structured community and competitive opportunity, supporting retention alongside recruitment." }
   ]
 }

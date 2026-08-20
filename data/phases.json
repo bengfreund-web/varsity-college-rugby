@@ -1,17 +1,13 @@
 {
-  "summary": "Commit now, hire a head coach in early 2027 to begin recruiting, and field a first varsity team in Fall 2027. Rugby carries one of the largest rosters in college sport at almost no per-athlete cost \u2014 a recruiting channel that enrolls students no other program on campus can reach, and being first in your region is a story no competitor can match.",
+  "eyebrow": "How it works",
+  "title": "From feasibility to first kickoff",
+  "lead": "A practical implementation roadmap in months, not fixed dates. Expand any stage to see what it involves.",
   "phases": [
-    {
-      "term": "By end of 2026",
-      "title": "Commit to varsity rugby"
-    },
-    {
-      "term": "By April 2027",
-      "title": "Hire a head coach"
-    },
-    {
-      "term": "Fall 2027",
-      "title": "First varsity season"
-    }
+    { "months": "Months 1–2",  "title": "Evaluate", "tasks": ["Institutional assessment", "Enrollment opportunity", "Initial budget", "Facility assessment", "Title IX / compliance review", "Competitive landscape"] },
+    { "months": "Months 3–4",  "title": "Approve",  "tasks": ["Finalize the financial model", "Identify competition structure", "Administrative approval", "Establish launch budget", "Define staffing model"] },
+    { "months": "Months 5–6",  "title": "Build",    "tasks": ["Hire head coach", "Begin recruiting infrastructure", "Establish program branding", "Confirm facilities", "Build initial schedule"] },
+    { "months": "Months 7–9",  "title": "Recruit",  "tasks": ["High school outreach", "Club outreach", "Recruiting events", "Admissions coordination", "Campus visits", "Initial commitments"] },
+    { "months": "Months 10–12","title": "Prepare",  "tasks": ["Finalize roster", "Equipment", "Athletic training protocols", "Eligibility / compliance", "Competition schedule", "Preseason preparation"] },
+    { "months": "Year 2",      "title": "Compete",  "tasks": ["Students arrive", "Preseason begins", "First varsity competition", "Recruiting for the next class continues"] }
   ]
 }

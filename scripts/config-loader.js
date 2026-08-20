@@ -22,9 +22,10 @@ const iconSvg = (name) =>
 
 /* Safety commitments are fixed structural copy, not owner data. */
 const SAFETY = [
-  { title: "Medical coverage and concussion protocol", body: "A defined standard of medical coverage for every match, plus an adopted, written concussion protocol governing removal, assessment, and return to play — enforced by trained match-day staff." },
-  { title: "Certified coaching and technique", body: "Every coach holds a current certification through an approved pathway, and coaching to defined tackle-height and technique standards is required from day one. Certification is a condition of taking the field, not a goal for later." },
-  { title: "Equipment and officiating standards", body: "Posts, padding, and field markings meet defined equipment standards on an inspection schedule, and every match is run by certified referees. Officiating quality is treated as a safety input, not an afterthought." },
+  { title: "Medical coverage and concussion protocol", body: "A defined standard of match-day medical coverage, plus an adopted concussion protocol governing removal, assessment, and return to play — the same systems that govern your existing varsity sports." },
+  { title: "Certified coaching and technique", body: "Every coach holds a current certification, and coaching to defined tackle-height and technique standards is required from day one. Certification is a condition of taking the field." },
+  { title: "Equipment and officiating standards", body: "Posts, padding, and field markings meet defined standards on an inspection schedule, and every match is run by certified referees." },
+  { title: "Title IX is institution-specific", body: "Title IX analysis depends on your institution's participation, aid, facilities, and demographics. It should be reviewed against your own numbers during feasibility — not assumed, and not treated as a blanket obstacle." },
 ];
 
 function setText(sel, val) {
@@ -48,17 +49,23 @@ function hydrateHeroHeadline(config) {
     .join("");
 }
 
-function hydratePhases(phases) {
-  setText("[data-summary]", phases?.summary);
-  const track = document.querySelector("[data-phases]");
-  if (!track) return;
-  track.innerHTML = (phases?.phases || [])
-    .map((p) => {
-      const term = p.term || p.termPlaceholder || "";
-      return `<div class="phase">
-        <span class="phase__term">${esc(term)}</span>
-        <h3 class="phase__title">${esc(p.title)}</h3>
-      </div>`;
+function hydrateTimeline(data) {
+  setText("[data-timeline-eyebrow]", data?.eyebrow);
+  setText("[data-timeline-title]", data?.title);
+  setText("[data-timeline-lead]", data?.lead);
+  const wrap = document.querySelector("[data-timeline]");
+  if (!wrap) return;
+  wrap.innerHTML = (data?.phases || [])
+    .map((p, i) => {
+      const tasks = (p.tasks || []).map((t) => `<li>${esc(t)}</li>`).join("");
+      return `<details class="road"${i === 0 ? " open" : ""}>
+        <summary>
+          <span class="road__marker" aria-hidden="true"></span>
+          <span class="road__months">${esc(p.months)}</span>
+          <span class="road__stage">${esc(p.title)}</span>
+        </summary>
+        <ul class="road__tasks">${tasks}</ul>
+      </details>`;
     })
     .join("");
 }
@@ -67,6 +74,7 @@ function hydrateWhy(why) {
   if (!why) return;
   setText("[data-why-eyebrow]", why.eyebrow);
   setText("[data-why-title]", why.title);
+  setText("[data-why-lead]", why.lead);
   const grid = document.querySelector("[data-why-grid]");
   if (!grid) return;
   grid.innerHTML = (why.pillars || [])
@@ -161,7 +169,7 @@ loadData().then((data) => {
   const config = data.config || {};
   hydrateConfig(config);
   hydrateHeroHeadline(config);
-  hydratePhases(data.phases);
+  hydrateTimeline(data.phases);
   hydrateWhy(data.why);
   hydrateMomentum(data.momentum);
   hydrateSafety();
