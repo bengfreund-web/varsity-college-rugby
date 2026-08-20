@@ -2,14 +2,23 @@
   "eyebrow": "Financial model",
   "title": "What does varsity rugby cost?",
   "totalLabel": "Estimated Year-One program budget",
-  "total": 275000,
-  "note": "Illustrative example — every college's figures differ. Replace with your institution's numbers.",
+  "total": 165750,
+  "note": "Illustrative first-year figures from a real proposal. Years 2–5 run at about $151,000 — the one-time equipment spend does not repeat. Every college's numbers differ.",
   "categories": [
-    { "label": "Personnel",        "amount": 115000, "items": [ {"label":"Head coach","amount":70000}, {"label":"Assistant coaching","amount":30000}, {"label":"Administrative support","amount":15000} ] },
-    { "label": "Travel",           "amount": 80000,  "items": [ {"label":"Transportation","amount":45000}, {"label":"Hotels","amount":25000}, {"label":"Meals","amount":10000} ] },
-    { "label": "Competition",      "amount": 25000,  "items": [ {"label":"Officials","amount":12000}, {"label":"League / conference fees","amount":8000}, {"label":"Match operations","amount":5000} ] },
-    { "label": "Equipment",        "amount": 20000,  "items": [ {"label":"Uniforms","amount":8000}, {"label":"Training equipment","amount":7000}, {"label":"Medical / safety equipment","amount":5000} ] },
-    { "label": "Recruiting",       "amount": 15000,  "items": [ {"label":"Travel","amount":8000}, {"label":"Recruiting events","amount":5000}, {"label":"Marketing","amount":2000} ] },
-    { "label": "Athletic support", "amount": 20000,  "items": [ {"label":"Athletic training","amount":12000}, {"label":"Strength and conditioning","amount":6000}, {"label":"Other support","amount":2000} ] }
+    { "label": "Personnel", "amount": 72000, "items": [
+      { "label": "Head coach (1.0 FTE, both squads)", "amount": 52000 },
+      { "label": "Graduate assistants (2)", "amount": 20000 }
+    ] },
+    { "label": "Travel and competition", "amount": 75000, "items": [
+      { "label": "Both squads — fall 15s and spring 7s", "amount": 75000 }
+    ] },
+    { "label": "Equipment and kit", "amount": 18750, "items": [
+      { "label": "Team equipment (one-time)", "amount": 10000 },
+      { "label": "Playing kit", "amount": 3500 },
+      { "label": "Training and off-field kit", "amount": 5250 }
+    ] },
+    { "label": "Facilities", "amount": 0, "items": [
+      { "label": "Shares existing grass — no new build", "amount": 0 }
+    ] }
   ]
 }
