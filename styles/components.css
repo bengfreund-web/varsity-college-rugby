@@ -504,29 +504,19 @@
 /* ============================================================
    PHOTOS — full-bleed action strip + champions pair
    ============================================================ */
-/* Short, full-bleed action strip (top/bottom cropped for a wide band) */
-.photo-strip { width: 100%; overflow: hidden; line-height: 0; }
-.photo-strip img {
-  width: 100%;
-  height: clamp(150px, 18vw, 230px);
-  object-fit: cover;
-  object-position: center 45%;
-  display: block;
-}
-
 /* Champions pair — inside its own section, wider and bigger */
 .photo-duo {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: clamp(0.75rem, 2vw, 1.25rem);
 }
 .photo-duo__img {
   width: 100%;
-  height: clamp(240px, 28vw, 360px);
+  height: clamp(220px, 24vw, 320px);
   object-fit: cover;
   object-position: center;
   border-radius: var(--radius);
   display: block;
 }
 .photo-duo__img:first-child { object-position: center 25%; }
-@media (max-width: 640px) { .photo-duo { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .photo-duo { grid-template-columns: 1fr; } }
