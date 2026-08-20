@@ -502,21 +502,21 @@
 .footer__org { color: color-mix(in srgb, var(--paper) 55%, transparent); font-size: var(--step--1); font-family: var(--font-data); }
 
 /* ============================================================
-   PHOTOS — full-bleed action strip + champions pair
+   PHOTOS — champions photos as centered single accents
    ============================================================ */
-/* Champions pair — inside its own section, wider and bigger */
-.photo-duo {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(0.75rem, 2vw, 1.25rem);
+.photo-solo {
+  width: var(--container);
+  margin-inline: auto;
+  padding-block: clamp(2.25rem, 5vw, 3.5rem);
+  display: flex;
+  justify-content: center;
 }
-.photo-duo__img {
+.photo-solo img {
   width: 100%;
-  height: clamp(220px, 24vw, 320px);
+  max-width: 400px;
+  height: clamp(220px, 24vw, 300px);
   object-fit: cover;
   object-position: center;
   border-radius: var(--radius);
   display: block;
 }
-.photo-duo__img:first-child { object-position: center 25%; }
-@media (max-width: 900px) { .photo-duo { grid-template-columns: 1fr; } }
