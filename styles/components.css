@@ -374,7 +374,7 @@
 /* ============================================================
    FINANCIAL MODEL — top-line figure + expandable breakdown
    ============================================================ */
-.topline { margin-bottom: clamp(1.75rem, 4vw, 2.5rem); }
+.topline { margin-bottom: 1.5rem; }
 .topline__label {
   font-family: var(--font-data); text-transform: uppercase;
   letter-spacing: 0.12em; font-size: var(--step--1); color: var(--muted);
@@ -382,21 +382,26 @@
 .topline__num {
   font-family: var(--font-display); font-optical-sizing: auto; font-weight: 800;
   font-size: var(--step-4); line-height: 1; color: var(--accent);
-  letter-spacing: -0.02em; margin: 0.4rem 0 0.6rem;
+  letter-spacing: -0.02em; margin: 0.35rem 0 0.75rem;
 }
-.topline__note { font-size: var(--step--1); color: var(--muted); max-width: 62ch; }
+.topline__note { font-size: var(--step--1); color: var(--muted); max-width: 60ch; }
 
+/* Breakdown toggle — a clear dropdown button */
 .breakdown { max-width: 780px; }
 .breakdown > summary {
   cursor: pointer; list-style: none;
-  display: inline-flex; align-items: center; gap: 0.5rem;
+  display: inline-flex; align-items: center; gap: 0.55rem;
   font-family: var(--font-display); font-optical-sizing: auto; font-weight: 600;
-  color: var(--accent); padding: 0.5rem 0;
+  font-size: var(--step--1); color: var(--ink);
+  border: 1.5px solid var(--line-strong); border-radius: 999px;
+  padding: 0.55rem 1.15rem;
+  transition: border-color 150ms var(--ease-out), color 150ms var(--ease-out);
 }
+.breakdown > summary:hover { border-color: var(--accent); color: var(--accent); }
 .breakdown > summary::-webkit-details-marker { display: none; }
-.breakdown > summary::after { content: "\2193"; transition: transform 200ms var(--ease-out); }
+.breakdown > summary::after { content: "\2193"; color: var(--accent); transition: transform 200ms var(--ease-out); }
 .breakdown[open] > summary::after { transform: rotate(180deg); }
-.breakdown[open] > summary { margin-bottom: 0.6rem; }
+.breakdown[open] > summary { margin-bottom: 1rem; }
 
 /* ============================================================
    SAFETY CARDS
@@ -498,19 +503,18 @@
    LEDGER — cost read against enrollment value (financial section)
    ============================================================ */
 .ledger {
-  margin-top: clamp(2.5rem, 6vw, 4rem);
-  padding-top: clamp(1.75rem, 4vw, 2.5rem);
-  border-top: 2px solid var(--ink);
-  max-width: 820px;
+  margin-top: clamp(2rem, 5vw, 3rem);
+  padding-top: clamp(1.5rem, 3vw, 2rem);
+  border-top: 1px solid var(--line);
+  max-width: 760px;
 }
 .ledger__title { font-family: var(--font-display); font-optical-sizing: auto; font-weight: 700; font-size: var(--step-1); color: var(--ink); }
-.ledger__lead { color: var(--ink-2); margin-top: 0.5rem; max-width: 60ch; }
-.ledger__stats { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.25rem, 3vw, 2.25rem); margin: 1.5rem 0; }
-@media (max-width: 560px) { .ledger__stats { grid-template-columns: 1fr; } }
-.stat { display: grid; gap: 0.4rem; align-content: start; }
-.stat__num { font-family: var(--font-display); font-optical-sizing: auto; font-weight: 800; font-size: var(--step-3); color: var(--accent); line-height: 1; letter-spacing: -0.02em; }
-.stat__label { color: var(--ink-2); font-size: var(--step--1); max-width: 34ch; }
-.ledger__note { color: var(--muted); font-size: var(--step--1); max-width: 64ch; }
+.ledger__lead { color: var(--ink-2); margin-top: 0.4rem; max-width: 56ch; }
+.ledger__stats { display: flex; flex-wrap: wrap; gap: clamp(1.75rem, 6vw, 3.5rem); margin: 1.5rem 0 1.1rem; }
+.stat { display: grid; gap: 0.35rem; align-content: start; flex: 1 1 220px; }
+.stat__num { font-family: var(--font-display); font-optical-sizing: auto; font-weight: 800; font-size: var(--step-2); color: var(--accent); line-height: 1; letter-spacing: -0.02em; }
+.stat__label { color: var(--muted); font-size: var(--step--1); max-width: 30ch; }
+.ledger__note { color: var(--muted); font-size: var(--step--1); max-width: 62ch; }
 
 /* ============================================================
    EVALUATE STEPS — what happens after you reach out

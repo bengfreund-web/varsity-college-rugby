@@ -3,7 +3,7 @@
   "title": "What does varsity rugby cost?",
   "totalLabel": "Estimated Year-One program budget",
   "total": 165750,
-  "note": "Illustrative first-year figures from a real proposal. Years 2\u20135 run at about $151,000 \u2014 the one-time equipment spend does not repeat. Every college's numbers differ.",
+  "note": "Illustrative first-year figures from a real proposal. Years 2\u20135 run about $151,000.",
   "categories": [
     {
       "label": "Personnel",
@@ -60,7 +60,7 @@
   ],
   "ledger": {
     "title": "The other side of the ledger",
-    "lead": "Rugby is enrollment-funded. The cost only makes sense read against the students it brings in.",
+    "lead": "Read the cost against the students the program brings in.",
     "stats": [
       {
         "num": "~12",
@@ -71,6 +71,6 @@
         "label": "roster growth by Year 5 \u2014 one of the largest in college sport"
       }
     ],
-    "note": "Incremental students \u2014 those who would not otherwise have enrolled \u2014 are not the same as total roster size. The enrollment case should be built on the former."
+    "note": "Incremental students \u2014 those who wouldn't otherwise enroll \u2014 aren't the same as total roster size."
   }
 }
