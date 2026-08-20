@@ -290,11 +290,12 @@
    ============================================================ */
 .pillar-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(1.25rem, 3vw, 2rem);
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(1rem, 2.2vw, 1.75rem);
 }
-@media (max-width: 1199px) { .pillar-row { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 599px)  { .pillar-row { grid-template-columns: 1fr; } }
+@media (max-width: 1100px) { .pillar-row { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 720px)  { .pillar-row { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px)  { .pillar-row { grid-template-columns: 1fr; } }
 
 .pillar { display: grid; gap: 0.7rem; align-content: start; }
 .pillar h3 {
