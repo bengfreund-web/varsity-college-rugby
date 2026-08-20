@@ -502,33 +502,48 @@
 .footer__org { color: color-mix(in srgb, var(--paper) 55%, transparent); font-size: var(--step--1); font-family: var(--font-data); }
 
 /* ============================================================
-   PHOTO BANDS — full-bleed match action + champions
+   PHOTOS — modest, centered accents (support the copy, don't dominate)
    ============================================================ */
-.photo-band { width: 100%; overflow: hidden; line-height: 0; }
+.photo-band {
+  width: var(--container);
+  margin-inline: auto;
+  padding-block: clamp(2.5rem, 6vw, 4rem);
+  text-align: center;
+}
 .photo-band img {
-  width: 100%;
-  height: clamp(300px, 44vw, 560px);
-  object-fit: cover;
-  object-position: center 32%;
   display: block;
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  margin-inline: auto;
+  border-radius: var(--radius);
 }
 
-.photo-duo { display: grid; grid-template-columns: 1fr 1fr; width: 100%; line-height: 0; }
+.photo-duo {
+  width: var(--container);
+  margin-inline: auto;
+  padding-top: clamp(2.5rem, 6vw, 4rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(0.75rem, 2vw, 1.25rem);
+}
 .photo-duo__img {
   width: 100%;
-  height: clamp(260px, 34vw, 470px);
+  max-width: 330px;
+  height: 220px;
   object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius);
   display: block;
 }
-.photo-duo__img:first-child { object-position: center 22%; }
-@media (max-width: 700px) { .photo-duo { grid-template-columns: 1fr; } }
 
 .photo-caption {
   text-align: center;
   font-family: var(--font-data);
   font-size: var(--step--1);
   color: var(--muted);
-  max-width: 62ch;
+  max-width: 60ch;
   margin: 0 auto;
-  padding: 1.25rem 1.25rem 1.75rem;
+  padding: 1.1rem 1.25rem 0;
 }
