@@ -153,13 +153,15 @@
   font-optical-sizing: auto;
   font-weight: 600;
   font-size: var(--step-4);
-  line-height: 1.04;
+  line-height: 1.08;
   letter-spacing: -0.015em;
   color: var(--ink);
   margin-bottom: 1.6rem;
   max-width: 12ch;
 }
-.hero__headline .line { display: block; overflow: hidden; }
+/* Per-line overflow masks the rise animation; padding gives descenders
+   (g, y, p) room inside the mask, and the negative margin keeps line spacing. */
+.hero__headline .line { display: block; overflow: hidden; padding-bottom: 0.14em; margin-bottom: -0.14em; }
 .hero__headline .line > span { display: block; }
 .hero__subhead {
   font-size: var(--step-1);
