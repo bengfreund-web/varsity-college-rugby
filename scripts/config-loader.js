@@ -92,7 +92,11 @@ function hydrateMomentum(momentum) {
       const img = s.logo
         ? `<img src="${esc(s.logo)}" alt="${esc(s.alt)}" class="subject__logo${wide}" loading="lazy">`
         : "";
-      return `<div class="subject">${img}<p>${esc(s.body)}</p></div>`;
+      const link =
+        s.link && s.link.href
+          ? `<a class="subject__link" href="${esc(s.link.href)}" target="_blank" rel="noopener">${esc(s.link.label || "Learn more")} <span aria-hidden="true">&rarr;</span></a>`
+          : "";
+      return `<div class="subject">${img}<p>${esc(s.body)}</p>${link}</div>`;
     })
     .join("");
 }

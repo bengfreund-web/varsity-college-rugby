@@ -12,7 +12,8 @@
       "logo": "assets/img/usa-rugby-logo.png",
       "alt": "USA Rugby",
       "wide": false,
-      "body": "More than 50 colleges already field varsity rugby under USA Rugby, proving the model works at the collegiate level."
+      "body": "USA Rugby runs the college game with established men's and women's divisions and a national competitive structure — the framework a new program plugs straight into.",
+      "link": { "href": "https://usa.rugby/college", "label": "See the college framework and divisions" }
     },
     {
       "logo": "assets/img/olympic-rings.svg",

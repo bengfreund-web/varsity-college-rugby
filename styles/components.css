@@ -329,6 +329,17 @@
   justify-self: start;
 }
 .subject p { color: var(--ink-2); font-size: var(--step--1); }
+.subject__link {
+  align-self: start;
+  font-size: var(--step--1);
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  padding-bottom: 1px;
+  transition: border-color 150ms var(--ease-out), color 150ms var(--ease-out);
+}
+.subject__link:hover { color: var(--accent-2); border-bottom-color: var(--accent-2); }
 
 /* ============================================================
    NEEDS GRID — "How easy it is to play"
@@ -489,3 +500,35 @@
 .footer__meta a:hover { color: #fff; }
 .footer__line { height: 1px; background: color-mix(in srgb, var(--paper) 18%, transparent); margin-top: 1rem; }
 .footer__org { color: color-mix(in srgb, var(--paper) 55%, transparent); font-size: var(--step--1); font-family: var(--font-data); }
+
+/* ============================================================
+   PHOTO BANDS — full-bleed match action + champions
+   ============================================================ */
+.photo-band { width: 100%; overflow: hidden; line-height: 0; }
+.photo-band img {
+  width: 100%;
+  height: clamp(300px, 44vw, 560px);
+  object-fit: cover;
+  object-position: center 32%;
+  display: block;
+}
+
+.photo-duo { display: grid; grid-template-columns: 1fr 1fr; width: 100%; line-height: 0; }
+.photo-duo__img {
+  width: 100%;
+  height: clamp(260px, 34vw, 470px);
+  object-fit: cover;
+  display: block;
+}
+.photo-duo__img:first-child { object-position: center 22%; }
+@media (max-width: 700px) { .photo-duo { grid-template-columns: 1fr; } }
+
+.photo-caption {
+  text-align: center;
+  font-family: var(--font-data);
+  font-size: var(--step--1);
+  color: var(--muted);
+  max-width: 62ch;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 1.75rem;
+}
