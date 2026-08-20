@@ -1,0 +1,22 @@
+{
+  "intro": "An example first-year budget for a brand-new program. Every college's numbers differ — these illustrate the shape: mostly people, very little capital.",
+  "example": {
+    "label": "Example Year 1 budget",
+    "lineItems": [
+      { "label": "Head coach (1.0 FTE, both squads)", "amount": 52000, "note": "One appointment covering a men's and a women's program" },
+      { "label": "Graduate assistants (2)", "amount": 20000, "note": "One per program, or assistant stipends near $10,000 each" },
+      { "label": "Travel and competition", "amount": 75000, "note": "Both squads — fall 15s and spring 7s, regional and drivable" },
+      { "label": "Team equipment (one-time)", "amount": 10000, "note": "Posts, tackle bags, pads, medical — shared across both squads" },
+      { "label": "Playing kit", "amount": 3500, "note": "About $100 per player on a five-year replacement cycle" },
+      { "label": "Training and off-field kit", "amount": 5250, "note": "About $150 per player on a five-year replacement cycle" },
+      { "label": "Facilities", "amount": 0, "note": "Shares existing grass — no new build required" }
+    ],
+    "total": 165750,
+    "totalNote": "Years 2–5 run at about $151,000 — the one-time equipment spend does not repeat."
+  },
+  "highlights": [
+    { "label": "Low capital", "body": "A rugby pitch fits existing grass, and posts are the only fixed capital item. No new field, no new building." },
+    { "label": "Enrollment-positive", "body": "Rugby carries one of the largest rosters in college sport at almost no per-athlete capital cost — a recruiting channel first, a team second." },
+    { "label": "Break-even is small", "body": "At typical net tuition, a program breaks even at roughly a dozen athletes in Year 1, while rosters grow from about 35 to 95 by Year 5." }
+  ]
+}

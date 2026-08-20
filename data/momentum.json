@@ -1,0 +1,30 @@
+{
+  "eyebrow": "National momentum",
+  "title": "A sport on the rise",
+  "subjects": [
+    {
+      "logo": "assets/img/ncaa-logo.png",
+      "alt": "NCAA",
+      "wide": false,
+      "body": "The NCAA recognizes women's rugby as an Emerging Sport, a direct pathway toward varsity status and an NCAA championship."
+    },
+    {
+      "logo": "assets/img/usa-rugby-logo.png",
+      "alt": "USA Rugby",
+      "wide": false,
+      "body": "More than 50 colleges already field varsity rugby under USA Rugby, proving the model works at the collegiate level."
+    },
+    {
+      "logo": "assets/img/olympic-rings.svg",
+      "alt": "Olympic Games",
+      "wide": false,
+      "body": "Rugby Sevens has been an Olympic sport since 2016, and in 2024 the USA women won bronze."
+    },
+    {
+      "logo": "assets/img/rugby-world-cup-2031-logo.png",
+      "alt": "Rugby World Cup 2031, USA",
+      "wide": true,
+      "body": "The Rugby World Cup comes to the United States in 2031, putting the sport in front of its biggest American audience yet."
+    }
+  ]
+}

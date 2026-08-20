@@ -1,0 +1,22 @@
+# Netlify configuration for Varsity College Rugby
+# Also deployable to Vercel or GitHub Pages (static, no build step).
+
+[build]
+  publish = "."
+  command = ""
+
+# Convenience redirect to the full proposal PDF.
+# Update the destination when the PDF is added to assets/docs/.
+[[redirects]]
+  from = "/proposal"
+  to = "/assets/docs/proposal.pdf"
+  status = 302
+  force = false
+
+# Baseline security headers.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"

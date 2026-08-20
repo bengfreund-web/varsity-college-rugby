@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varsity College Rugby</title>
+  <meta name="description" content="How colleges with no rugby program today can introduce it as a brand-new varsity sport — a low-capital, enrollment-positive addition to athletics, with an example budget and a clear launch timeline.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+  <a class="skip-link" href="#timeline">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header>
+    <nav class="nav" aria-label="Primary">
+      <div class="nav__inner">
+        <a class="nav__brand" href="#top" data-config="siteName">Varsity College Rugby</a>
+        <ul class="nav__links">
+          <li><a class="nav__link" href="#timeline">Timeline</a></li>
+          <li><a class="nav__link" href="#why">Why</a></li>
+          <li><a class="nav__link" href="#momentum">Momentum</a></li>
+          <li><a class="nav__link" href="#cost">Cost</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm nav__cta" href="#join">Get involved</a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-overlay" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div class="nav__overlay" id="nav-overlay">
+      <a href="#timeline">Timeline</a>
+      <a href="#why">Why it works</a>
+      <a href="#momentum">A sport on the rise</a>
+      <a href="#cost">What it costs</a>
+      <a href="#join">Get involved</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-headline">
+      <div class="hero__inner">
+        <div class="hero__content col-10">
+          <p class="eyebrow hero__eyebrow" data-config="hero.eyebrow">Our mission</p>
+          <h1 class="hero__headline" id="hero-headline" data-hero-headline>
+            <span class="line"><span>Bring varsity rugby</span></span>
+            <span class="line"><span>to campus</span></span>
+          </h1>
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="#join">Get involved</a>
+            <a class="btn btn--outline" href="#why">Learn more</a>
+          </div>
+          <p class="hero__footnote" data-hero-footnote hidden></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TIMELINE ============ -->
+    <section class="section section--panel" id="timeline" aria-labelledby="timeline-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">The path</p>
+          <h2 class="section__title" id="timeline-title">Timeline</h2>
+        </div>
+        <div class="phases reveal">
+          <div class="phases__track" data-phases></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INITIATIVE SUMMARY ============ -->
+    <section class="section section--tight" id="summary" aria-labelledby="summary-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">In brief</p>
+          <h2 class="section__title" id="summary-title">Initiative summary</h2>
+        </div>
+        <p class="summary-lead reveal" data-summary></p>
+      </div>
+    </section>
+
+
+    <!-- ============ WHY THIS WILL WORK ============ -->
+    <section class="section section--panel" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow" data-why-eyebrow>About the initiative</p>
+          <h2 class="section__title" id="why-title" data-why-title>Why this will work</h2>
+        </div>
+        <div class="pillar-row reveal" data-why-grid></div>
+      </div>
+    </section>
+
+    <!-- ============ A SPORT ON THE RISE ============ -->
+    <section class="section" id="momentum" aria-labelledby="momentum-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow" data-momentum-eyebrow>National momentum</p>
+          <h2 class="section__title" id="momentum-title" data-momentum-title>A sport on the rise</h2>
+        </div>
+        <div class="subject-grid reveal" data-momentum-grid></div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT IT COSTS ============ -->
+    <section class="section section--card" id="cost" aria-labelledby="cost-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">The budget</p>
+          <h2 class="section__title" id="cost-title">What it costs</h2>
+          <p class="section__lead" data-budget-intro>An example first-year budget for a brand-new program. Every college’s numbers differ — these illustrate the shape: mostly people, very little capital.</p>
+        </div>
+
+        <div class="budget-grid reveal">
+          <table class="ex-budget" data-budget-example></table>
+          <div class="fin-highlights" data-budget-highlights></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SAFETY ============ -->
+    <section class="section section--panel" id="safety" aria-labelledby="safety-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Standards</p>
+          <h2 class="section__title" id="safety-title">Safety and standards</h2>
+        </div>
+        <div class="cards reveal" data-safety></div>
+      </div>
+    </section>
+
+    <!-- ============ ADD YOUR PROGRAM ============ -->
+    <section class="section" id="join" aria-labelledby="join-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Get involved</p>
+          <h2 class="section__title" id="join-title">Ready to bring rugby to your campus?</h2>
+          <p class="section__lead">About a minute. Tell us about your institution and the biggest barrier you see to launching a program, and we'll be in touch.</p>
+        </div>
+        <div class="form-wrap reveal" data-form-wrap></div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section--panel" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Questions</p>
+          <h2 class="section__title" id="faq-title">Frequently asked</h2>
+        </div>
+        <div class="faq reveal" data-faq></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" aria-label="Footer">
+    <div class="footer__inner">
+      <div class="footer__brand" data-config="siteName">Varsity College Rugby</div>
+      <p class="footer__desc">Helping colleges with no rugby program today introduce it as a brand-new varsity sport — a low-capital, enrollment-positive addition to athletics.</p>
+      <div class="footer__meta" data-footer-meta></div>
+      <div class="footer__line" aria-hidden="true"></div>
+      <div class="footer__org" data-footer-org></div>
+    </div>
+  </footer>
+
+  <script src="scripts/config-loader.js" type="module"></script>
+  <script src="scripts/nav.js" type="module"></script>
+  <script src="scripts/budget-table.js" type="module"></script>
+  <script src="scripts/reveal.js" type="module"></script>
+</body>
+</html>

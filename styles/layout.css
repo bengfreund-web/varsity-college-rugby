@@ -1,0 +1,75 @@
+/* ============================================================
+   layout.css — grid, section rhythm, container.
+   Vertical rhythm is owned by .section and modified ONLY by
+   BEM modifiers, never by descendant overrides.
+   ============================================================ */
+
+.container {
+  width: var(--container);
+  margin-inline: auto;
+}
+
+/* ---- Section: single source of vertical rhythm ---- */
+.section {
+  padding-block: var(--section-pad);
+  position: relative;
+  border-top: var(--rule);            /* quiet editorial rules between sections */
+}
+.section:first-of-type { border-top: 0; }
+.section--tight   { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+
+/* Warm alternating band */
+.section--panel { background: var(--panel); }
+
+/* Clean white section (dense budget tables read better on pure white) */
+.section--card  { background: var(--card); }
+
+/* ---- Section header block ---- */
+.section__num { /* legacy; unused in editorial theme */ display: none; }
+
+.section__head {
+  margin-bottom: clamp(2rem, 5vw, 3.25rem);
+  max-width: var(--container-text);
+}
+.section__head .eyebrow { display: block; margin-bottom: 0.75rem; }
+.section__title {
+  font-size: var(--step-2);
+  max-width: 20ch;
+}
+.section__lead {
+  margin-top: 1.1rem;
+  color: var(--ink-2);
+  font-size: var(--step-1);
+  line-height: 1.5;
+  max-width: 58ch;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-optical-sizing: auto;
+}
+
+/* ---- 12-column grid ---- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: clamp(1rem, 3vw, 2rem);
+}
+@media (max-width: 1199px) { .grid { grid-template-columns: repeat(6, 1fr); } }
+@media (max-width: 899px)  { .grid { grid-template-columns: 1fr; } }
+
+.col-5  { grid-column: span 5; }
+.col-6  { grid-column: span 6; }
+.col-7  { grid-column: span 7; }
+.col-8  { grid-column: span 8; }
+.col-10 { grid-column: span 10; }
+.col-12 { grid-column: 1 / -1; }
+
+@media (max-width: 1199px) {
+  .col-5, .col-6, .col-7, .col-8, .col-10 { grid-column: 1 / -1; }
+}
+
+/* ---- Horizontal rule ---- */
+.rule {
+  border: 0;
+  border-top: var(--rule);
+  margin-block: clamp(1.5rem, 4vw, 3rem);
+}

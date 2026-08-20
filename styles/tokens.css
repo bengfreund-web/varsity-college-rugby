@@ -1,0 +1,58 @@
+/* ============================================================
+   tokens.css — design tokens only. No rules.
+   THEME: Clean pitch — cool near-white grounds, deep green-slate
+   ink, pitch-green accent, Poppins display + Inter body.
+   Every color and type decision derives from this file.
+   ============================================================ */
+
+:root {
+  /* ---- Color: grounds ---- */
+  --paper:  #F5F7F6;  /* page ground (cool near-white, faint green bias) */
+  --panel:  #E7EDE9;  /* alternating sections, cool raised band */
+  --card:   #FFFFFF;  /* cards, table surfaces */
+
+  /* ---- Color: ink / text ---- */
+  --ink:    #14201B;  /* primary text, headlines (near-black, green bias) */
+  --ink-2:  #3B4A44;  /* body on grounds, secondary text */
+  --muted:  #5F6E66;  /* eyebrows, captions, tertiary, null data */
+
+  /* ---- Color: accent ---- */
+  --accent:    #1E5B3E;  /* pitch green — links, primary CTA, key figures */
+  --accent-2:  #2A7350;  /* hover / lighter green */
+  --on-accent: #F5F7F6;  /* text on a green fill */
+  --kit:       #C56A2E;  /* one-time / warm counterpoint, used sparingly */
+
+  /* ---- Color: lines / footer ---- */
+  --line:        rgb(20 32 27 / 0.13);  /* hairlines, rules */
+  --line-strong: rgb(20 32 27 / 0.26);  /* stronger dividers */
+  --ink-footer:  #10201A;  /* dark green footer anchor */
+
+  /* Ink at opacities (for translucent nav, faint line art) */
+  --ink-90: rgb(20 32 27 / 0.90);
+  --ink-70: rgb(20 32 27 / 0.70);
+  --ink-08: rgb(20 32 27 / 0.07);
+  --paper-88: rgb(245 247 246 / 0.90);
+
+  /* ---- Type families ---- */
+  --font-display: "Poppins", system-ui, sans-serif;
+  --font-body:    "Inter", system-ui, sans-serif;
+  --font-data:    "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+
+  /* ---- Type scale (fluid) ---- */
+  --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
+  --step-0:  clamp(1rem, 0.96rem + 0.2vw, 1.1rem);
+  --step-1:  clamp(1.3rem, 1.18rem + 0.55vw, 1.55rem);
+  --step-2:  clamp(1.72rem, 1.45rem + 1.15vw, 2.35rem);
+  --step-3:  clamp(2.2rem, 1.75rem + 2.2vw, 3.3rem);
+  --step-4:  clamp(2.8rem, 2rem + 3.9vw, 4.75rem);
+
+  /* ---- Layout ---- */
+  --container: min(1180px, 100% - 2.5rem);
+  --container-text: min(760px, 100% - 2.5rem); /* narrow editorial measure */
+  --section-pad: clamp(3.75rem, 9vw, 7rem);
+  --radius: 3px;
+  --rule: 1px solid var(--line);
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}

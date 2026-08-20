@@ -1,0 +1,20 @@
+{
+  "siteName": "Varsity College Rugby",
+  "shortName": "VCR",
+  "tagline": "",
+  "scope": "national",
+  "launchTerm": null,
+  "contactEmail": "",
+  "parentOrg": "",
+  "formEmbedUrl": "",
+  "formDirectUrl": "",
+  "proposalPdfUrl": "",
+  "hero": {
+    "eyebrow": "Our mission",
+    "headline": [
+      "Bring varsity rugby",
+      "to campus"
+    ],
+    "subhead": "We help colleges with no rugby program today introduce it as a brand-new varsity sport \u2014 an enrollment-positive, low-capital addition to athletics that fields one of the largest rosters in college sport."
+  }
+}
