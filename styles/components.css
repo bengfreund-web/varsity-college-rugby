@@ -504,19 +504,12 @@
 /* ============================================================
    PHOTOS — champions photos as centered single accents
    ============================================================ */
-.photo-solo {
-  width: var(--container);
-  margin-inline: auto;
-  padding-block: clamp(2.25rem, 5vw, 3.5rem);
-  display: flex;
-  justify-content: center;
-}
+/* Full-bleed, short (top/bottom cropped) — stretch across the whole page */
+.photo-solo { width: 100%; overflow: hidden; line-height: 0; }
 .photo-solo img {
-  width: 100%;
-  max-width: 400px;
-  height: clamp(220px, 24vw, 300px);
-  object-fit: cover;
-  object-position: center;
-  border-radius: var(--radius);
   display: block;
+  width: 100%;
+  height: clamp(150px, 17vw, 230px);
+  object-fit: cover;
+  object-position: center 40%;
 }
