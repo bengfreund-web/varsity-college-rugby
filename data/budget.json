@@ -3,7 +3,7 @@
   "title": "What does varsity rugby cost?",
   "totalLabel": "Estimated Year-One program budget",
   "total": 165750,
-  "note": "Illustrative first-year figures from a real proposal. Years 2\u20135 run about $151,000.",
+  "note": "Illustrative first-year figures from a real proposal. Years 2 to 5 run about $151,000.",
   "categories": [
     {
       "label": "Coaching",
@@ -24,7 +24,7 @@
       "amount": 75000,
       "items": [
         {
-          "label": "Both squads \u2014 fall 15s and spring 7s",
+          "label": "Both squads, fall 15s and spring 7s",
           "amount": 75000
         }
       ]
@@ -52,7 +52,7 @@
       "amount": 0,
       "items": [
         {
-          "label": "Shares existing grass \u2014 no new build",
+          "label": "Shares existing grass, no new build",
           "amount": 0
         }
       ]
@@ -63,7 +63,7 @@
     "lead": "Rugby brings a large roster to campus, and a program can field more than one team.",
     "stats": [
       {
-        "num": "30\u201335",
+        "num": "30-35",
         "label": "athletes on each team's roster"
       },
       {
