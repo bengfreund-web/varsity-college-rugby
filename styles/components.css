@@ -555,18 +555,23 @@
 #montana .stat-band { margin: 1.25rem 0 0.9rem; }
 
 
-/* Roadmap competition figure (50+ programs) */
-.road-comp {
-  max-width: 780px; margin: 0 auto clamp(1.75rem, 4vw, 2.5rem);
+
+
+/* "How the season works" block under the roadmap */
+.season {
+  max-width: 820px; margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+  padding-top: clamp(1.75rem, 4vw, 2.5rem);
+  border-top: 1px solid var(--line);
   text-align: center;
 }
-.road-comp__num {
-  display: block;
-  font-family: var(--font-display); font-optical-sizing: auto; font-weight: 800;
-  font-size: var(--step-3); line-height: 1; color: var(--accent); letter-spacing: -0.02em;
+.season__title {
+  font-family: var(--font-display); font-optical-sizing: auto; font-weight: 700;
+  font-size: var(--step-1); color: var(--ink); margin-bottom: 1.5rem;
 }
-.road-comp__label {
-  display: block; margin-top: 0.35rem;
-  font-family: var(--font-display); font-weight: 600; color: var(--ink); font-size: var(--step-1);
+.season__stats {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: clamp(1.75rem, 6vw, 3.5rem); margin-bottom: 1.1rem;
 }
-.road-comp__note { color: var(--ink-2); font-size: var(--step--1); max-width: 60ch; margin: 0.5rem auto 0; }
+.season .stat { justify-items: center; text-align: center; flex: 0 1 300px; gap: 0.3rem; }
+.season .stat__label { max-width: 34ch; }
+.season__note { color: var(--ink-2); font-size: var(--step--1); max-width: 62ch; margin: 0 auto; }

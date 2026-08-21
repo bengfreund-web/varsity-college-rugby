@@ -65,9 +65,18 @@
       ]
     }
   ],
-  "competition": {
-    "num": "50+",
-    "label": "college rugby programs within a 10-hour drive",
-    "note": "You play them home and away, with conference playoffs and a national championship after the fall 15s and spring 7s seasons."
+  "season": {
+    "title": "How the season works",
+    "stats": [
+      {
+        "num": "50+",
+        "label": "college rugby programs within a 10-hour drive to play home and away"
+      },
+      {
+        "num": "2",
+        "label": "seasons a year: 15s in the fall, 7s in the spring"
+      }
+    ],
+    "note": "One roster and one coaching staff run both seasons. Travel is regional and drivable with no charter flights, and each season ends in conference playoffs and a national championship."
   }
 }
