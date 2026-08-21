@@ -1,7 +1,7 @@
 {
   "eyebrow": "How it works",
   "title": "From feasibility to first kickoff",
-  "lead": "A concrete build toward a fall launch. Finalize the budget by winter, hire the head coach in the spring, recruit through the summer, and compete against the 50-plus college programs within a 10-hour drive, with playoffs and a national championship after each season.",
+  "lead": "A concrete build toward a fall launch. Finalize the budget by winter, hire the head coach in the spring, recruit through the summer, and take the field in the fall.",
   "phases": [
     {
       "months": "By January",
@@ -64,5 +64,10 @@
         "Continue building depth and the pipeline"
       ]
     }
-  ]
+  ],
+  "competition": {
+    "num": "50+",
+    "label": "college rugby programs within a 10-hour drive",
+    "note": "You play them home and away, with conference playoffs and a national championship after the fall 15s and spring 7s seasons."
+  }
 }

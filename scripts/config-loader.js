@@ -45,6 +45,13 @@ function hydrateTimeline(data) {
   setText("[data-timeline-eyebrow]", data?.eyebrow);
   setText("[data-timeline-title]", data?.title);
   setText("[data-timeline-lead]", data?.lead);
+  const comp = data?.competition;
+  const cwrap = document.querySelector("[data-timeline-competition]");
+  if (cwrap && comp) {
+    cwrap.innerHTML = `<span class="road-comp__num">${esc(comp.num)}</span>
+      <span class="road-comp__label">${esc(comp.label)}</span>
+      <p class="road-comp__note">${esc(comp.note)}</p>`;
+  }
   const wrap = document.querySelector("[data-timeline]");
   if (!wrap) return;
   wrap.innerHTML = (data?.phases || [])
