@@ -60,17 +60,17 @@
   ],
   "ledger": {
     "title": "Roster structure",
-    "lead": "Rugby brings a large roster to campus, and a program can field more than one team.",
+    "lead": "A full program runs a men's squad and a women's squad of 60 players each, enough to field two competitive teams on each side.",
     "stats": [
       {
-        "num": "30-35",
-        "label": "athletes on each team's roster"
+        "num": "60",
+        "label": "players on each squad, men's and women's"
       },
       {
-        "num": "2+",
-        "label": "teams a program can field (men's and women's)"
+        "num": "2",
+        "label": "competitive teams per squad, both competing for the college"
       }
     ],
-    "note": "More teams mean more students without proportionally more cost."
+    "note": "Around 120 student-athletes across a full program, more students without proportionally more cost."
   }
 }
