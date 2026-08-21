@@ -59,18 +59,18 @@
     }
   ],
   "ledger": {
-    "title": "The other side of the ledger",
-    "lead": "Read the cost against the students the program brings in.",
+    "title": "What it brings in",
+    "lead": "Rugby is enrollment-funded. It brings a large roster of students to campus, and the tuition they pay offsets the program's cost.",
     "stats": [
       {
-        "num": "~12",
-        "label": "incremental students cover the annual program cost, at typical net tuition"
+        "num": "Up to 95",
+        "label": "athletes on the roster by Year 5 \u2014 one of the largest squads in college sport"
       },
       {
-        "num": "35 \u2192 95",
-        "label": "roster growth by Year 5 \u2014 one of the largest in college sport"
+        "num": "~12 students",
+        "label": "cover the program's annual cost, at about $14,000 net tuition each"
       }
     ],
-    "note": "Incremental students \u2014 those who wouldn't otherwise enroll \u2014 aren't the same as total roster size."
+    "note": "Count only incremental students \u2014 those who wouldn't otherwise have enrolled \u2014 not the full roster."
   }
 }

@@ -534,3 +534,7 @@
   display: inline-flex; align-items: center; justify-content: center;
 }
 .step p { color: var(--ink-2); font-size: var(--step--1); margin: 0.3rem 0 0; }
+
+/* Timeline ("calendar") centered */
+#timeline .section__head { margin-inline: auto; text-align: center; }
+#timeline .roadmap { margin-inline: auto; }
