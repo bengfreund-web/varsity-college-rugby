@@ -551,3 +551,8 @@
 @media (max-width: 640px)  { .stat-band { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 400px)  { .stat-band { grid-template-columns: 1fr; } }
 .stat-band__note { color: var(--muted); font-size: var(--step--1); max-width: 64ch; }
+
+/* Condense the Montana framework block */
+#montana .section__head { margin-bottom: clamp(1.25rem, 2.5vw, 1.75rem); }
+#montana .section__lead { margin-top: 0.6rem; }
+#montana .stat-band { margin: 1.25rem 0 0.9rem; }

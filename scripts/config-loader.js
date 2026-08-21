@@ -58,7 +58,7 @@ function hydrateTimeline(data) {
   wrap.innerHTML = (data?.phases || [])
     .map((p, i) => {
       const tasks = (p.tasks || []).map((t) => `<li>${esc(t)}</li>`).join("");
-      return `<details class="road"${i === 0 ? " open" : ""}>
+      return `<details class="road">
         <summary>
           <span class="road__marker" aria-hidden="true"></span>
           <span class="road__months">${esc(p.months)}</span>
