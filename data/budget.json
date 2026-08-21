@@ -59,18 +59,18 @@
     }
   ],
   "ledger": {
-    "title": "What it brings in",
-    "lead": "Rugby is enrollment-funded. It brings a large roster of students to campus, and the tuition they pay offsets the program's cost.",
+    "title": "Roster structure",
+    "lead": "Rugby brings a large roster to campus, and a program can field more than one team.",
     "stats": [
       {
-        "num": "Up to 95",
-        "label": "athletes on the roster by Year 5 \u2014 one of the largest squads in college sport"
+        "num": "30\u201335",
+        "label": "athletes on each team's roster"
       },
       {
-        "num": "~12 students",
-        "label": "cover the program's annual cost, at about $14,000 net tuition each"
+        "num": "2+",
+        "label": "teams a program can field (men's and women's)"
       }
     ],
-    "note": "Count only incremental students \u2014 those who wouldn't otherwise have enrolled \u2014 not the full roster."
+    "note": "More teams mean more students without proportionally more cost."
   }
 }

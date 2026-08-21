@@ -9,7 +9,7 @@ const esc = (s) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
   );
 
-const DASH = "—";
+const DASH = "-";
 const money = (v) => fmtMoney(v) ?? DASH;
 
 function setText(sel, val) {
@@ -25,7 +25,7 @@ function render(budget) {
   setText("[data-budget-total]", money(budget.total));
   setText("[data-budget-note]", budget.note);
 
-  // The other side of the ledger — cost read against enrollment value
+  // Roster structure block (cost read against what the program brings in)
   const ledgerWrap = document.querySelector("[data-budget-ledger]");
   if (ledgerWrap && budget.ledger) {
     const l = budget.ledger;

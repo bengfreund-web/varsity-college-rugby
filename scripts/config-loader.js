@@ -20,14 +20,6 @@ const ICONS = {
 const iconSvg = (name) =>
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name] || ICONS.support}</svg>`;
 
-/* Safety commitments are fixed structural copy, not owner data. */
-const SAFETY = [
-  { title: "Medical coverage and concussion protocol", body: "A defined standard of match-day medical coverage, plus an adopted concussion protocol governing removal, assessment, and return to play — the same systems that govern your existing varsity sports." },
-  { title: "Certified coaching and technique", body: "Every coach holds a current certification, and coaching to defined tackle-height and technique standards is required from day one. Certification is a condition of taking the field." },
-  { title: "Equipment and officiating standards", body: "Posts, padding, and field markings meet defined standards on an inspection schedule, and every match is run by certified referees." },
-  { title: "Title IX is institution-specific", body: "Title IX analysis depends on your institution's participation, aid, facilities, and demographics. It should be reviewed against your own numbers during feasibility — not assumed, and not treated as a blanket obstacle." },
-];
-
 function setText(sel, val) {
   const el = document.querySelector(sel);
   if (el && val) el.textContent = val;
@@ -125,14 +117,6 @@ function hydrateMontana(m) {
     .join("");
 }
 
-function hydrateSafety() {
-  const wrap = document.querySelector("[data-safety]");
-  if (!wrap) return;
-  wrap.innerHTML = SAFETY.map(
-    (c) => `<div class="card"><h3 class="card__title">${esc(c.title)}</h3><p class="card__body">${esc(c.body)}</p></div>`
-  ).join("");
-}
-
 function contactBlock(config) {
   if (!config.contactEmail) return "";
   return `<p class="form-contact">Prefer to talk first? <a href="mailto:${esc(config.contactEmail)}">${esc(config.contactEmail)}</a></p>`;
@@ -189,7 +173,6 @@ loadData().then((data) => {
   hydrateWhy(data.why);
   hydrateMomentum(data.momentum);
   hydrateMontana(data.montana);
-  hydrateSafety();
   hydrateForm(config);
   hydrateFaq(data.faq);
   hydrateFooter(config);

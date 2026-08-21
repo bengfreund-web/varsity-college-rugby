@@ -1,12 +1,36 @@
 {
   "faq": [
-    { "q": "What does a varsity rugby program cost?", "a": "An illustrative first-year program runs in the mid-six figures. The financial model above shows a top-line figure you can expand into categories and individual line items, then replace with your institution's numbers." },
-    { "q": "How many athletes are on a roster?", "a": "Rugby carries one of the largest rosters in college sport. Not every roster spot represents an incremental student, so the enrollment case should distinguish total roster size from students who would not otherwise have enrolled." },
-    { "q": "Can we use our existing athletic fields?", "a": "Usually. Rugby fits standard rectangular fields and can share existing infrastructure, which is why it avoids the capital cost associated with many new sports." },
-    { "q": "How long does implementation take?", "a": "About 12 months from feasibility to a launched program, with the first competitive season the following year. The roadmap above breaks each stage into specific tasks." },
-    { "q": "Where do we recruit players?", "a": "From high school and club rugby, internal multi-sport athletes, and — for many programs — international recruits. The pathway feeds a growing pool of prospective student-athletes." },
-    { "q": "How does Title IX affect the decision?", "a": "Title IX analysis is institution-specific. Participation ratios, aid, facilities, and demographics all factor in, and it should be reviewed against your own numbers during feasibility." },
-    { "q": "Should we launch men's, women's, or both?", "a": "They are not identical propositions. Women's rugby carries an evolving NCAA/varsity landscape; men's draws from a large national club population. Many institutions evaluate both as one strategy." },
-    { "q": "What does Varsity College Rugby do?", "a": "We help institutions evaluate feasibility and the enrollment opportunity, build the financial model and implementation plan, and support recruiting and launch — so you can decide whether a program fits." }
+    {
+      "q": "What does a varsity rugby program cost?",
+      "a": "An illustrative first-year program runs in the mid-six figures. The financial model above shows a top-line figure you can expand into categories and individual line items, then replace with your institution's numbers."
+    },
+    {
+      "q": "How many athletes are on a roster?",
+      "a": "Rugby carries one of the largest rosters in college sport. Not every roster spot represents an incremental student, so the enrollment case should distinguish total roster size from students who would not otherwise have enrolled."
+    },
+    {
+      "q": "Can we use our existing athletic fields?",
+      "a": "Usually. Rugby fits standard rectangular fields and can share existing infrastructure, which is why it avoids the capital cost associated with many new sports."
+    },
+    {
+      "q": "How long does implementation take?",
+      "a": "About 12 months from feasibility to a launched program, with the first competitive season the following year. The roadmap above breaks each stage into specific tasks."
+    },
+    {
+      "q": "Where do we recruit players?",
+      "a": "From high school and club rugby, internal multi-sport athletes, and, for many programs, international recruits. The pathway feeds a growing pool of prospective student-athletes."
+    },
+    {
+      "q": "How does Title IX affect the decision?",
+      "a": "Title IX analysis is institution-specific. Participation ratios, aid, facilities, and demographics all factor in, and it should be reviewed against your own numbers during feasibility."
+    },
+    {
+      "q": "Should we launch men's, women's, or both?",
+      "a": "They are not identical propositions. Women's rugby carries an evolving NCAA/varsity landscape; men's draws from a large national club population. Many institutions evaluate both as one strategy."
+    },
+    {
+      "q": "What does Varsity College Rugby do?",
+      "a": "We help institutions evaluate feasibility and the enrollment opportunity, build the financial model and implementation plan, and support recruiting and launch, so you can decide whether a program fits."
+    }
   ]
 }

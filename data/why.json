@@ -1,12 +1,12 @@
 {
   "eyebrow": "Why rugby",
   "title": "The institutional opportunity",
-  "lead": "Rugby is an institutional decision before it is an athletic one. Here is what it can do for a college.",
+  "lead": "Rugby is an institutional decision before it is an athletic one. Here is what it can do for a college or university.",
   "pillars": [
-    { "icon": "demand",  "title": "Enrollment",       "body": "Rugby opens a new population of prospective student-athletes an institution can actively recruit — many of whom would not otherwise apply." },
-    { "icon": "support", "title": "Athletics",         "body": "Adds a varsity offering and expands the institution's athletic portfolio, with one of the largest rosters in college sport." },
-    { "icon": "barrier", "title": "Differentiation",   "body": "Gives an institution another way to stand out in competitive recruiting markets — a program most peers do not offer." },
-    { "icon": "cost",    "title": "Facilities",        "body": "Rugby can share existing rectangular fields and athletic infrastructure rather than requiring a sport-specific build." },
-    { "icon": "support", "title": "Student experience","body": "Creates another structured community and competitive opportunity, supporting retention alongside recruitment." }
+    { "icon": "demand",  "title": "Enrollment",        "body": "A new population of prospective student-athletes a college or university can actively recruit." },
+    { "icon": "cost",    "title": "Cost",              "body": "A low-cost program that shares existing fields and needs little capital." },
+    { "icon": "support", "title": "Athletics",         "body": "A varsity offering that expands the institution's athletic portfolio." },
+    { "icon": "barrier", "title": "Differentiation",   "body": "Another way to stand out in competitive recruiting markets." },
+    { "icon": "support", "title": "Student experience","body": "Another structured community and competitive opportunity for students." }
   ]
 }

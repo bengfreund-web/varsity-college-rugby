@@ -1,13 +1,13 @@
 {
   "eyebrow": "How it works",
   "title": "From feasibility to first kickoff",
-  "lead": "A practical implementation roadmap in months, not fixed dates. Expand any stage to see what it involves.",
+  "lead": "A concrete build toward a fall launch. Finalize the budget by winter, hire the head coach in the spring, recruit through the summer, and take the field in the fall.",
   "phases": [
-    { "months": "Months 1–2",  "title": "Evaluate", "tasks": ["Institutional assessment", "Enrollment opportunity", "Initial budget", "Facility assessment", "Title IX / compliance review", "Competitive landscape"] },
-    { "months": "Months 3–4",  "title": "Approve",  "tasks": ["Finalize the financial model", "Identify competition structure", "Administrative approval", "Establish launch budget", "Define staffing model"] },
-    { "months": "Months 5–6",  "title": "Build",    "tasks": ["Hire head coach", "Begin recruiting infrastructure", "Establish program branding", "Confirm facilities", "Build initial schedule"] },
-    { "months": "Months 7–9",  "title": "Recruit",  "tasks": ["High school outreach", "Club outreach", "Recruiting events", "Admissions coordination", "Campus visits", "Initial commitments"] },
-    { "months": "Months 10–12","title": "Prepare",  "tasks": ["Finalize roster", "Equipment", "Athletic training protocols", "Eligibility / compliance", "Competition schedule", "Preseason preparation"] },
-    { "months": "Year 2",      "title": "Compete",  "tasks": ["Students arrive", "Preseason begins", "First varsity competition", "Recruiting for the next class continues"] }
+    { "months": "By January",   "title": "Finalize and approve", "tasks": ["Feasibility and enrollment review", "Finalize the financial model and budget", "Institutional approval", "Confirm competition structure and compliance", "Facility assessment"] },
+    { "months": "April",        "title": "Hire the head coach",  "tasks": ["Appoint the head coach", "Open recruiting", "Order kit and equipment", "Confirm facility access"] },
+    { "months": "April to June", "title": "Recruiting window",   "tasks": ["High school and club outreach", "Recruiting events and campus visits", "Admissions coordination", "Initial commitments"] },
+    { "months": "Summer",       "title": "Prepare for launch",   "tasks": ["Finalize the roster", "Athletic training and medical protocols", "Eligibility and compliance", "Build the competition schedule", "Preseason preparation"] },
+    { "months": "Fall",         "title": "First season, 15s",    "tasks": ["Students arrive and preseason begins", "First varsity 15s fixtures", "Recruiting for the next class continues"] },
+    { "months": "Spring",       "title": "Spring 7s",            "tasks": ["Spring 7s season", "Continue building depth and the pipeline"] }
   ]
 }

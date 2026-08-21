@@ -1,28 +1,10 @@
 {
   "eyebrow": "In Montana",
-  "title": "The Montana framework",
-  "lead": "A college that adds rugby inherits a working pipeline \u2014 and expands it. Montana already produces college-ready players, and each new varsity destination gives more of them a reason to keep playing.",
+  "title": "The high-school framework",
+  "lead": "There is already a pipeline of high-school players who want to play college rugby. Montana is the example.",
   "stats": [
-    {
-      "num": "8",
-      "label": "core youth clubs across the state"
-    },
-    {
-      "num": "1,100+",
-      "label": "registered players in Montana"
-    },
-    {
-      "num": "2,000+",
-      "label": "athletes at the Great Montana Challenge"
-    },
-    {
-      "num": "35",
-      "label": "states represented at the tournament"
-    },
-    {
-      "num": "50+",
-      "label": "college rugby programs within a 10-hour drive \u2014 opponents and recruits within reach"
-    }
-  ],
-  "note": "You draw from this base and deepen it \u2014 the framework grows with every program that succeeds."
+    { "num": "8",      "label": "core youth clubs across the state" },
+    { "num": "1,100+", "label": "registered players in Montana" },
+    { "num": "50+",    "label": "college rugby programs within a 10-hour drive" }
+  ]
 }
