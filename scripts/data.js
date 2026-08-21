@@ -2,7 +2,7 @@
    Fetches each file once, caches the promise, and hands the same
    parsed object to every module that imports it. */
 
-const FILES = ["config", "phases", "why", "momentum", "budget", "faq"];
+const FILES = ["config", "phases", "why", "momentum", "montana", "budget", "faq"];
 
 let cache = null;
 

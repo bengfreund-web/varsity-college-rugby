@@ -109,6 +109,22 @@ function hydrateMomentum(momentum) {
     .join("");
 }
 
+function hydrateMontana(m) {
+  if (!m) return;
+  setText("[data-montana-eyebrow]", m.eyebrow);
+  setText("[data-montana-title]", m.title);
+  setText("[data-montana-lead]", m.lead);
+  setText("[data-montana-note]", m.note);
+  const wrap = document.querySelector("[data-montana-stats]");
+  if (!wrap) return;
+  wrap.innerHTML = (m.stats || [])
+    .map(
+      (s) =>
+        `<div class="stat"><span class="stat__num">${esc(s.num)}</span><span class="stat__label">${esc(s.label)}</span></div>`
+    )
+    .join("");
+}
+
 function hydrateSafety() {
   const wrap = document.querySelector("[data-safety]");
   if (!wrap) return;
@@ -172,6 +188,7 @@ loadData().then((data) => {
   hydrateTimeline(data.phases);
   hydrateWhy(data.why);
   hydrateMomentum(data.momentum);
+  hydrateMontana(data.montana);
   hydrateSafety();
   hydrateForm(config);
   hydrateFaq(data.faq);
