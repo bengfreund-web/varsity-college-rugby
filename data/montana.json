@@ -1,12 +1,24 @@
 {
-  "eyebrow": "The Montana framework",
-  "title": "The talent is already here",
-  "lead": "Montana already runs an organized rugby base — clubs, registered players, and a national showcase — so student-athletes are ready for the college game now, not someday.",
+  "eyebrow": "In Montana",
+  "title": "The Montana framework",
+  "lead": "Montana already runs an organized rugby base \u2014 clubs, registered players, and a national showcase \u2014 so student-athletes are ready for the college game now, not someday.",
   "stats": [
-    { "num": "8",      "label": "core youth clubs across the state" },
-    { "num": "1,100+", "label": "registered players in Montana" },
-    { "num": "2,000+", "label": "athletes at the Great Montana Challenge" },
-    { "num": "35",     "label": "states represented at the tournament" }
+    {
+      "num": "8",
+      "label": "core youth clubs across the state"
+    },
+    {
+      "num": "1,100+",
+      "label": "registered players in Montana"
+    },
+    {
+      "num": "2,000+",
+      "label": "athletes at the Great Montana Challenge"
+    },
+    {
+      "num": "35",
+      "label": "states represented at the tournament"
+    }
   ],
   "note": "A program recruiting in the region inherits this pipeline rather than building it from scratch."
 }
